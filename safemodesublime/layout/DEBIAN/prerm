@@ -1,0 +1,8 @@
+#!/bin/sh
+
+printf "\n##########\n# Starting pre removal script.\n#";
+printf "\n# Reverting to Electra's default SafeMode from a backup.\n#";
+mv /var/mobile/Documents/SafeModeOriginal.app Applications/SafeModeOriginal.app;
+mv /Applications/SafeMode.app /Applications/SafeModeSublime.app;
+printf "\n# SafeModeSublime has been successfully removed! This tweak was brought to you by @useignition the #1 3rd Party AppStore! https://ignition.fun.\n##########\n\n";
+exit 0;

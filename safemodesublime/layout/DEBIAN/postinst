@@ -1,0 +1,9 @@
+#!/bin/sh
+
+printf "\n##########\n# Starting post installation.\n#";
+printf "\n# Copying Electra's default SafeMode to a backup.\n#";
+mv /Applications/SafeMode.app /var/mobile/Documents/SafeModeOriginal.app;
+printf "\n# Moving SafeModeSublime to SafeMode.\n#";
+mv /Applications/SafeModeSublime.app /Applications/SafeMode.app;
+printf "\n# SafeModeSublime has been successfully installed! This tweak was brought to you by @useignition the #1 3rd Party AppStore! https://ignition.fun.\n##########\n\n";
+exit 0;
